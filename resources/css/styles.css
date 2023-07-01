@@ -1,0 +1,121 @@
+html {
+    font-family: 'Tsukimi Rounded', sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.logo-container {
+    padding-left: 1rem;
+    width: 3rem;
+}
+
+.logo-container img {
+    width: 3rem;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+header ul li {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 4rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+header a:hover {
+    color: orange;
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.club-name, .navbar {
+    flex: 1;
+    text-align: center;
+}
+
+#about p, #membership p, #events p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 1rem;
+}
+
+#about .image-containers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+#about .image-containers img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#membership .image-containers img {
+    width: 100%;
+    height: 31.25rem;
+    object-fit: cover;
+}
+
+#events .image-containers img {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+}
+
+footer {
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.social-media li {
+    display: inline-block;
+    padding-left: 2rem;
+}
+
+.social-media img:hover {
+    background-color: greenyellow;
+}
+
+@media (max-width: 768px) {
+    #about .image-containers {
+        grid-template-columns: 1fr;
+    }
+
+    #about .image-containers img {
+        height: 100%;
+    }
+
+    #events .image-containers img {
+        width: 100%;
+    }
+}
